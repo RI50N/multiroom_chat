@@ -7,9 +7,10 @@ gulp.task('browser-sync', function() {
     proxy: "localhost:3000",
     reloadDelay: 400,
     files: [
-      "app/views/*/*.ejs",
+      "app/views/*.ejs",
       "app/routes/*.js",
       "app/models/*.js",
+      "app/controllers/*.js",
       "config/*.js"
     ],
     open: "external"
